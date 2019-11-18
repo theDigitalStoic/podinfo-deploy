@@ -5,7 +5,7 @@ metadata:
   name: metrics
   namespace: dev
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: metrics
@@ -17,7 +17,7 @@ spec:
         prometheus.io/scrape: 'true'
     spec:
       containers:
-      - name: podinfod
+      - name: metrics
         image: quay.io/brice/metrics-demo:v4-subscription-service
         command:
         - --port=3000
@@ -29,4 +29,3 @@ spec:
           requests:
             memory: "32Mi"
             cpu: "10m"
-
