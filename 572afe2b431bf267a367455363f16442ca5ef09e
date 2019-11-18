@@ -1,0 +1,1 @@
+{"jobID":"5d1ab785-c274-0af4-feb6-a742c6e88b0c","spec":{"type":"policy","cause":{"Message":"","User":"Alex Stoica \u003cstoica.dimitrie@gmail.com\u003e"},"spec":{"dev:deployment/metrics":{"add":{"automated":"true"},"remove":null}}},"result":null}
