@@ -19,12 +19,8 @@ spec:
       containers:
       - name: metrics
         image: quay.io/brice/metrics-demo:v4-subscription-service
-        command:
-        - --port=3000
         ports:
         - containerPort: 3000
-          periodSeconds: 10
-          failureThreshold: 2
         resources:
           requests:
             memory: "32Mi"
