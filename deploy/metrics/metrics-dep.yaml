@@ -4,6 +4,8 @@ apiVersion: apps/v1
 metadata:
   name: metrics
   namespace: dev
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   replicas: 1
   selector:
